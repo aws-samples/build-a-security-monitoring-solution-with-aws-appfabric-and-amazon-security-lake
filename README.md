@@ -22,7 +22,7 @@ The stack includes the following infrastructure services:
 
 ## Usage guide<a name="Usage"></a>
 
-### Deploying the resources with CDK
+### Deploy the resources with the CDK
 
 1. Clone this repository to your workstation.
 2. Configure the constants at the top of the [appfabric_security_lake/appfabric_security_lake_stack.py](appfabric_security_lake/appfabric_security_lake_stack.py) file with the appropriate values for your environment.
@@ -54,15 +54,7 @@ $ cdk synth
 $ cdk deploy
 ```
 
-### Deleting the stack
-
-Use `cdk destroy` to delete the resources you created with `cdk deploy`.
-
-```
-$ cdk destroy
-```
-
-### Deploying the resources using CloudFormation
+### Deploy the resources using CloudFormation
 
 Follow the instructions below to deploy the infrastructure to connect AppFabric and Security Lake with the AWS console.
 
@@ -71,6 +63,21 @@ Follow the instructions below to deploy the infrastructure to connect AppFabric 
 3. In the CloudFormation service console, navigate to the stacks area.
 4. In the stacks area, create a stack, select the "Upload a template file" option, and then upload the template file.
 5. Click on "Next", enter the parameters for your environment, and then follow the steps outlined in the console to deploy the stack.
+
+### Deleting the stack
+
+#### Delete the stack using the CDK
+
+Use `cdk destroy` to delete the resources you created with `cdk deploy`.
+
+```
+$ cdk destroy
+```
+
+#### Delete the stack using CloudFormation
+
+1. In your AWS account, navigate to the CloudFormation service console.
+2. Click on your stack and then click **Delete**.
 
 ## Security <a name="Security"></a>
 
